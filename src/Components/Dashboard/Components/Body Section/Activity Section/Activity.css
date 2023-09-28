@@ -1,0 +1,100 @@
+.activitySection {
+    flex-basis: 50%;
+}
+
+.headingActivity {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.headingActivity h1 {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 200;
+}
+
+.btnFlex {
+    display: flex;
+    padding: 0.8rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.btnFlex:hover{
+    border: 1px solid hsl(94, 59%, 35%);
+    border-radius: 10px;
+}
+
+.secContainer {
+    margin-top: 1rem;
+}
+
+.singleCustomer {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+img.custimg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px grey;
+    margin-right: 1rem;
+}
+
+.customerDetails {
+    flex: 1;
+}
+
+span.name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    display: block;
+}
+
+.customerDetails small {
+    font-weight: 500;
+    color: black;
+    font-size: small;
+}
+
+.duration {
+    color: black;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+/* @media screen and (max-width: 860px){
+    .activitySection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .btnFlex{
+            display: none;
+        }
+        .duration{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+    .activitySection{
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 918px){
+    .activitySection{
+        width: 100%;
+    }
+}

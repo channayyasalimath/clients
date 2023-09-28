@@ -1,0 +1,489 @@
+.topSection, .headerSection{
+    justify-content: space-between;
+}
+
+.title{}
+
+h1 {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 18%);
+    font-weight: 700;
+}
+
+p {
+    font-size: .938rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.searchBar {
+    box-shadow: 0 2px 4px hsl(330, 12%, 97%);
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 5px;
+    gap: 1rem;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.icon {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.icon:hover{
+    color: hsl(94, 75%, 35%); 
+    transform: .3s ease;
+}
+
+.adminDiv {
+    gap: 1rem;
+}
+
+.iconNew {
+    font-size: 2.5rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px hsl(330, 12%, 97%);
+    color: hsl(240, 1%, 48%);
+}
+
+.adminImage{
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 2.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px hslhsl(240, 1%, 48%);
+
+}
+
+.img2 {
+    max-width: 30px;
+    /* margin-right: 0.5rem; */
+    border-radius: 6px;
+    padding: 0.2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 21px;
+    height: 13px;
+    width: 0px;
+    background: #fff;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    padding: 10px 15px 0px 10px;
+}
+
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all;
+}
+
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all;
+}
+
+.dropdown-menu ul li{
+    padding: 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+h4 {
+    text-align: center;
+}
+
+.dropdown-menu ul li:hover a{
+    color: hsl(94, 75%, 35%);
+cursor: pointer;
+}
+
+.dropdown-menu ul li:hover img{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dropdownItem{
+    display: flex;
+    margin: 10px auto;
+}
+
+.dropdownItem iconUser{
+   margin-right: 10px;
+   opacity: 0.5;
+}
+
+/* .icon {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+} */
+
+.dropdownItem a{
+    max-width: 100px;
+    margin-left: 10px;
+    transition: all;
+}
+
+.cardSection {
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+
+
+.rightCard {
+    position: relative;
+    flex-basis: 70%;
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.videoDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightCard h1 {
+    z-index: 100;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+
+.rightCard p {
+    z-index: 100;
+    color: palegreen;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.buttons {
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.btn {
+    z-index: 100;
+    padding: 0.8rem 1.5rem;
+    color: hsl(94, 59%, 35%);
+    border: 2px solid transparent;
+}
+
+.transparent {
+    background: none;
+    border: 2px solid hsl(94, 75%, 35%);
+     color: white;;
+}
+
+.transparent:hover{
+    color: hsl(0, 0%, 100%); 
+    transform: .3s ease;
+}
+
+.leftCard {
+    flex-basis: 50%;
+}
+
+.main {
+    position: relative;
+    padding: 1rem;
+    height: 200px;
+    width: 329px;
+    border-radius: 1rem;
+    justify-content: space-between;
+
+    
+}
+
+
+
+.main::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    background: palegreen;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+ }
+
+ .sideBarCard-inTop {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.cardContent {
+    position: relative;
+    padding: 1rem;
+    background: #68ff68;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardContent h3 {
+    font-size: 12px;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-weight: 800;
+    color: black;
+}
+
+.cardContent p {
+    font-size: medium;
+    color: black;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.btn1 {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px grey;
+    padding: 0.8rem 1rem;
+    color: red;
+    position: relative;
+    color: black;
+    z-index: 1000;
+    font-weight: 500;
+    font-family: serif;
+}
+  
+  .btn1 .icon{
+    margin-left: .5rem;
+  }
+  
+  .btn1:hover{
+    background: palegreen;
+    color: red;
+  }
+
+  .circle1, .circle2{
+    position: absolute;
+    background: palegreen;
+    border-radius: 50%;
+    opacity: .7;
+  }
+
+  .circle1 {
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    right: -50px;
+    left: -50px;
+}
+
+.circle2 {
+    height: 150px;
+    width: 150px;
+    bottom:-80px ;
+    right: -70px;
+    z-index: 1;
+}
+
+
+ .flex-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 17px; */
+    margin-top: 10px;
+}
+
+.flexLeft {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+}
+
+
+  .textDiv {
+    z-index: 100;
+    gap: 1.5rem;
+        font-weight: 500;
+        color: black;
+        /* display: flex; */
+}
+
+.textDiv h1{
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    color: black;
+
+    
+
+    
+    
+}
+
+.small {
+    font-size: .938rem;
+    display: block;
+    color: hsl(94, 59%, 35%);
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.link {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.imageDiv {
+    transform: translateY(24px);
+}
+
+.treeLamp {
+    max-width: 160px;
+    /* width: 200px; */
+}
+
+@media screen and (max-width: 900px) {
+    .cardSection{
+        flex-direction: column;
+     
+    }
+
+    .rightCard, .leftCard{
+        width: 100%;
+        flex-basis: 100%;
+    }  
+
+    .leftCard{
+        /* margin-top: 1rem; */
+        align-self: flex-start;
+        height: 10px !important;
+    }
+    .sideBarCard-inTop {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:918px) {
+    .searchBar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .cardSection{
+        .leftCard{
+            .main{
+                width: 100%;
+            }
+            .sideBarCard-inTop{
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:490px){
+    .headerSection{
+        .adminDiv{
+            display: none;
+        }
+    }
+
+    .title{
+        text-align: center;
+        margin: auto;
+    }
+
+    .cardSection{
+        .rightCard{
+            text-align: center;
+        }
+        .buttons{
+            margin: auto;
+            flex-direction: column;
+
+        .btn{
+            width: 100%;
+        }    
+        }
+    }
+
+    .leftCard{
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: palegreen;
+        }
+            .textDiv{
+                margin: auto;
+            }
+            &::before{
+                width: 100% !important;
+            }
+            .imageDiv{
+                display: none;
+            }
+        
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .topSection{
+        .cardSection{
+            .rightCard{
+                text-align: center;
+                padding: 2rem 1rem;
+
+                h1{
+                    font-size: 1.2rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
